@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77F62E93A4FAE8F16BA9802A /* Pods_AdessoMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099CF710007A832E22088D4 /* Pods_AdessoMVC.framework */; };
 		F954D18C23C73B1500701F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D18B23C73B1500701F1E /* AppDelegate.swift */; };
 		F954D19023C73B1500701F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D18F23C73B1500701F1E /* ViewController.swift */; };
 		F954D19323C73B1500701F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F954D19123C73B1500701F1E /* Main.storyboard */; };
@@ -18,9 +19,13 @@
 		F954D1AC23C7468200701F1E /* ResourcesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F954D1AA23C7468200701F1E /* ResourcesVC.xib */; };
 		F954D1B123C7477600701F1E /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D1AF23C7477600701F1E /* ResourcesTableViewCell.swift */; };
 		F954D1B223C7477600701F1E /* ResourcesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F954D1B023C7477600701F1E /* ResourcesTableViewCell.xib */; };
+		F954D1B523C7493E00701F1E /* NewsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D1B423C7493E00701F1E /* NewsApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00597047F707D5F3BF8F065E /* Pods-AdessoMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdessoMVC.release.xcconfig"; path = "Target Support Files/Pods-AdessoMVC/Pods-AdessoMVC.release.xcconfig"; sourceTree = "<group>"; };
+		3099CF710007A832E22088D4 /* Pods_AdessoMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdessoMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9752843873C3C0289EE1CC83 /* Pods-AdessoMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdessoMVC.debug.xcconfig"; path = "Target Support Files/Pods-AdessoMVC/Pods-AdessoMVC.debug.xcconfig"; sourceTree = "<group>"; };
 		F954D18823C73B1500701F1E /* AdessoMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdessoMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F954D18B23C73B1500701F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F954D18F23C73B1500701F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		F954D1AA23C7468200701F1E /* ResourcesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourcesVC.xib; sourceTree = "<group>"; };
 		F954D1AF23C7477600701F1E /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
 		F954D1B023C7477600701F1E /* ResourcesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourcesTableViewCell.xib; sourceTree = "<group>"; };
+		F954D1B423C7493E00701F1E /* NewsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F62E93A4FAE8F16BA9802A /* Pods_AdessoMVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FD8A1EB3067C064606E3B28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9752843873C3C0289EE1CC83 /* Pods-AdessoMVC.debug.xcconfig */,
+				00597047F707D5F3BF8F065E /* Pods-AdessoMVC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7FD052CCDDE3CC6BF4B4627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3099CF710007A832E22088D4 /* Pods_AdessoMVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F954D17F23C73B1500701F1E = {
 			isa = PBXGroup;
 			children = (
 				F954D18A23C73B1500701F1E /* AdessoMVC */,
 				F954D18923C73B1500701F1E /* Products */,
+				4FD8A1EB3067C064606E3B28 /* Pods */,
+				D7FD052CCDDE3CC6BF4B4627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 		F954D18A23C73B1500701F1E /* AdessoMVC */ = {
 			isa = PBXGroup;
 			children = (
+				F954D1B323C748C900701F1E /* Network */,
 				F954D1A223C73F1400701F1E /* Views */,
 				F954D1A123C73F0D00701F1E /* Controller */,
 				F954D1A023C73F0800701F1E /* Model */,
@@ -146,6 +173,14 @@
 			path = ResourcesTableViewCell;
 			sourceTree = "<group>";
 		};
+		F954D1B323C748C900701F1E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F954D1B423C7493E00701F1E /* NewsApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F954D19C23C73B1700701F1E /* Build configuration list for PBXNativeTarget "AdessoMVC" */;
 			buildPhases = (
+				62996804E968F3CA61369412 /* [CP] Check Pods Manifest.lock */,
 				F954D18423C73B1500701F1E /* Sources */,
 				F954D18523C73B1500701F1E /* Frameworks */,
 				F954D18623C73B1500701F1E /* Resources */,
+				4B273DA9EE8677BADA90F5A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +252,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B273DA9EE8677BADA90F5A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdessoMVC/Pods-AdessoMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdessoMVC/Pods-AdessoMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdessoMVC/Pods-AdessoMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62996804E968F3CA61369412 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdessoMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F954D18423C73B1500701F1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,6 +304,7 @@
 				F954D19023C73B1500701F1E /* ViewController.swift in Sources */,
 				F954D18C23C73B1500701F1E /* AppDelegate.swift in Sources */,
 				F954D1A623C7401F00701F1E /* SplashVC.swift in Sources */,
+				F954D1B523C7493E00701F1E /* NewsApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +446,7 @@
 		};
 		F954D19D23C73B1700701F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9752843873C3C0289EE1CC83 /* Pods-AdessoMVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +465,7 @@
 		};
 		F954D19E23C73B1700701F1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00597047F707D5F3BF8F065E /* Pods-AdessoMVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
