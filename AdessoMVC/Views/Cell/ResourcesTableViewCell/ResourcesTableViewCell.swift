@@ -16,11 +16,14 @@ class ResourcesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configure(source: SourcesModel) {
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        let title = source.name
+        let subTitle = source.description
 
-        // Configure the view for the selected state
+        titleLabel.text = title
+        descriptionLabel.text = subTitle
     }
     
 }
