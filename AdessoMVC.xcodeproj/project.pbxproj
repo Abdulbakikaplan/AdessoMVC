@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F954D18C23C73B1500701F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D18B23C73B1500701F1E /* AppDelegate.swift */; };
-		F954D18E23C73B1500701F1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D18D23C73B1500701F1E /* SceneDelegate.swift */; };
 		F954D19023C73B1500701F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954D18F23C73B1500701F1E /* ViewController.swift */; };
 		F954D19323C73B1500701F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F954D19123C73B1500701F1E /* Main.storyboard */; };
 		F954D19523C73B1700701F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F954D19423C73B1700701F1E /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		F954D18823C73B1500701F1E /* AdessoMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdessoMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F954D18B23C73B1500701F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F954D18D23C73B1500701F1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F954D18F23C73B1500701F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F954D19223C73B1500701F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F954D19423C73B1700701F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		F954D18A23C73B1500701F1E /* AdessoMVC */ = {
 			isa = PBXGroup;
 			children = (
-				F954D18B23C73B1500701F1E /* AppDelegate.swift */,
-				F954D18D23C73B1500701F1E /* SceneDelegate.swift */,
-				F954D18F23C73B1500701F1E /* ViewController.swift */,
-				F954D19123C73B1500701F1E /* Main.storyboard */,
-				F954D19423C73B1700701F1E /* Assets.xcassets */,
-				F954D19623C73B1700701F1E /* LaunchScreen.storyboard */,
+				F954D1A223C73F1400701F1E /* Views */,
+				F954D1A123C73F0D00701F1E /* Controller */,
+				F954D1A023C73F0800701F1E /* Model */,
+				F954D19F23C73EF800701F1E /* App */,
 				F954D19923C73B1700701F1E /* Info.plist */,
 			);
 			path = AdessoMVC;
+			sourceTree = "<group>";
+		};
+		F954D19F23C73EF800701F1E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F954D18B23C73B1500701F1E /* AppDelegate.swift */,
+				F954D19423C73B1700701F1E /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F954D1A023C73F0800701F1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F954D1A123C73F0D00701F1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F954D18F23C73B1500701F1E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F954D1A223C73F1400701F1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F954D19123C73B1500701F1E /* Main.storyboard */,
+				F954D19623C73B1700701F1E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +169,6 @@
 			files = (
 				F954D19023C73B1500701F1E /* ViewController.swift in Sources */,
 				F954D18C23C73B1500701F1E /* AppDelegate.swift in Sources */,
-				F954D18E23C73B1500701F1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
