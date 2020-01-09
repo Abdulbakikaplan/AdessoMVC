@@ -61,8 +61,15 @@ extension ResourcesVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResourcesTableViewCell", for: indexPath) as! ResourcesTableViewCell
         guard let source = result?.sources[indexPath.row] else { return UITableViewCell() }
         cell.configure(source: source)
+        cell.selectionStyle = .none
 
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
+        detailVC.result = result?.sources[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
        
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
