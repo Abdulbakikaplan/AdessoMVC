@@ -6,5 +6,8 @@ target 'AdessoMVC' do
   use_frameworks!
 
   # Pods for AdessoMVC
+    pod 'Kingfisher', '~> 4.10.0'
+    pod 'Moya', '~> 13.0'
+    pod  'SwiftLint'
 
 end
