@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="AdessoMVC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIt-eN-U5a">
+                        <rect key="frame" x="20" y="5" width="335" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="210" id="njP-TS-SeV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJA-fo-rZl">
+                        <rect key="frame" x="20" y="225" width="335" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-vL-WWg">
+                        <rect key="frame" x="20" y="259" width="140" height="30"/>
+                        <state key="normal" title="Okuma Listeme Ekle"/>
+                        <connections>
+                            <action selector="readListButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ydN-DB-5wI"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:35:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-SV-Csz">
+                        <rect key="frame" x="301" y="264" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DJA-fo-rZl" firstAttribute="top" secondItem="QIt-eN-U5a" secondAttribute="bottom" constant="10" id="DZk-O4-hJi"/>
+                    <constraint firstItem="geM-SV-Csz" firstAttribute="top" secondItem="DJA-fo-rZl" secondAttribute="bottom" constant="23" id="G4Q-D7-uLl"/>
+                    <constraint firstItem="QIt-eN-U5a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Jhd-Pp-SRc"/>
+                    <constraint firstItem="DJA-fo-rZl" firstAttribute="trailing" secondItem="QIt-eN-U5a" secondAttribute="trailing" id="L6J-pI-vro"/>
+                    <constraint firstAttribute="trailing" secondItem="QIt-eN-U5a" secondAttribute="trailing" constant="20" id="LAL-1E-tIl"/>
+                    <constraint firstItem="Sf8-vL-WWg" firstAttribute="top" secondItem="DJA-fo-rZl" secondAttribute="bottom" constant="18" id="Mvb-9W-ip3"/>
+                    <constraint firstItem="geM-SV-Csz" firstAttribute="leading" secondItem="Sf8-vL-WWg" secondAttribute="trailing" constant="141" id="TxV-4e-GGQ"/>
+                    <constraint firstItem="QIt-eN-U5a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bcc-XO-EWw"/>
+                    <constraint firstItem="DJA-fo-rZl" firstAttribute="leading" secondItem="QIt-eN-U5a" secondAttribute="leading" id="beo-jy-ISQ"/>
+                    <constraint firstItem="geM-SV-Csz" firstAttribute="trailing" secondItem="QIt-eN-U5a" secondAttribute="trailing" id="l3a-CX-SQM"/>
+                    <constraint firstItem="Sf8-vL-WWg" firstAttribute="leading" secondItem="DJA-fo-rZl" secondAttribute="leading" id="xvV-WU-kEQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailImageView" destination="QIt-eN-U5a" id="oiV-vQ-RmI"/>
+                <outlet property="readListButton" destination="Sf8-vL-WWg" id="waL-ru-8Dm"/>
+                <outlet property="timeLabel" destination="geM-SV-Csz" id="Elb-BV-diE"/>
+                <outlet property="titleLabel" destination="DJA-fo-rZl" id="jkr-6S-KBq"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="104"/>
+        </tableViewCell>
+    </objects>
+</document>
